@@ -5,5 +5,6 @@ resource "aws_ami_from_instance" "pscloud-ami-from-instance" {
 
   tags = {
     Name = "${var.pscloud_company}_ami_${var.pscloud_env}"
+    Project = var.pscloud_project
   }
 }
